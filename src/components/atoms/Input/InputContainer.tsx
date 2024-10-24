@@ -7,7 +7,12 @@ const InputContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <View
       style={[
-        { flexDirection: 'row', width: '100%', alignItems: 'center' },
+        {
+          flexDirection: 'row',
+          width: '100%',
+          alignItems: 'center',
+          height: 50,
+        },
 
         gutters.paddingHorizontal_16,
         borders.w_1,

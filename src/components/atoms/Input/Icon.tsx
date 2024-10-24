@@ -5,7 +5,7 @@ import { useTheme } from '@/theme';
 
 interface IconProps {
   onPress: any;
-  size?: number; // Allows for customizable icon size
+  size?: number;
   secure?: boolean;
 }
 
