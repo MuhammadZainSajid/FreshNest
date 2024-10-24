@@ -1,7 +1,7 @@
-import React from "react";
-import { Text } from "react-native";
-import { useTheme } from "@/theme";
-import RNBounceable from "@freakycoder/react-native-bounceable";
+import React from 'react';
+import { Text } from 'react-native';
+import { useTheme } from '@/theme';
+import RNBounceable from '@freakycoder/react-native-bounceable';
 
 interface ButtonProps {
   label: string;
@@ -22,7 +22,7 @@ const Button = ({ label, onPress, disabled = false }: ButtonProps) => {
         borders.rounded_16,
         backgrounds.gray800,
         disabled ? backgrounds.gray400 : backgrounds.gray800, // change bg color when disabled
-        { width: "100%" },
+        { width: '100%' },
       ]}
       onPress={onPress}
       disabled={disabled}
@@ -32,7 +32,7 @@ const Button = ({ label, onPress, disabled = false }: ButtonProps) => {
           fonts.size_16,
           fonts.bold,
           fonts.alignCenter,
-          { color: variant === "dark" ? "#000" : "#fff" },
+          { color: variant === 'dark' ? '#000' : '#fff' },
         ]}
       >
         {label}
